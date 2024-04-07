@@ -3,6 +3,7 @@
 Challenges:
 - pwn/scratchpad
 - pwn/guess_it
+- pwn/old_school
 - pwn/beginner_pwn_1
 - pwn/beginner_pwn_2
 - rev/beginner_rev_1
@@ -11,7 +12,8 @@ Challenges:
 
 Challenge Authors:
 - pwn/scratchpad: James
-- pwn/guess_it:   James
+- pwn/guess_it: James
+- pwn/old_school: James
 - pwn/beginner_pwn_1: Cole (cole@cole.pizza)
 - pwn/beginner_pwn_2: Cole (cole@cole.pizza)
 - rev/beginner_rev_1: Cole (cole@cole.pizza)
