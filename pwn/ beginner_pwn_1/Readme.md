@@ -1,0 +1,1 @@
+This challenge involes overflowing the `is_admin` integer present at the end of `username` buffer. In order to exploit this program all that is required is to enter a username of more then 15 characters. Any string will do.
