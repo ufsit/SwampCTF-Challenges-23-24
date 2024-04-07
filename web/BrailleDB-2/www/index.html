@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrailleDB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            position: relative;
+        }
+        .search-container {
+            margin-bottom: 20px;
+	    width: 75%;
+	    transform: translate(-50%);
+	    margin-left: 50%;
+        }
+        input[type="text"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        .toggle-feedback-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ddd;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover,
+        .toggle-feedback-btn:hover {
+            background-color: #bbb;
+        }
+        .response-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding-top: 10px;
+	    padding-bottom: 10px;
+	    padding-left: 1%;
+            border-radius: 4px;
+
+	    width: 74%;
+	    margin-left: 50%;
+	    transform: translate(-50%);
+        }
+        .feedback-container {
+            position: fixed;
+            right: 20px;
+            bottom: 0px;
+            width: 300px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 8px 8px 0 0;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .feedback-container.open {
+            transform: translateY(0);
+        }
+        .toggle-feedback-btn {
+            position: relative;
+            text-align: center;
+	    transition: transform 0.3s ease;
+	    top: -70px;
+	    left: 50%;
+	    transform: translate(-50%);
+	    width: 322px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">BrailleDB</h1>
+    <div class="search-container">
+        <h2>Convert to Braille</h2>
+        <input type="text" id="searchInput" placeholder="Type here...">
+        <input type="submit" value="Search" onclick="sendSearchRequest()">
+    </div>
+    <div class="response-container" id="responseContainer"></div>
+    <div class="feedback-container" id="feedbackContainer">
+        <button class="toggle-feedback-btn" id="feedbackContainerButton" onclick="toggleFeedbackForm()">Feedback</button>
+	<h2>Submit Feedback</h2>
+        <textarea id="feedbackInput" placeholder="Your feedback..."></textarea>
+        <input type="submit" value="Submit Feedback" onclick="submitFeedback()">
+    </div>
+    
+    <script>
+        function sendSearchRequest() {
+            var searchText = document.getElementById('searchInput').value.toUpperCase();
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/api/braille.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                if ((this.status >= 200 && this.status < 300) || this.status == 400) {
+                    document.getElementById('responseContainer').innerText = this.responseText;
+                } else {
+                    console.error('Request failed. Returned status of ' + xhr.status);
+                }
+            };
+            xhr.send('searchText=' + encodeURIComponent(searchText));
+        }
+
+	function submitFeedback() {
+	    var feedbackText = document.getElementById('feedbackInput').value;
+	    var xhr = new XMLHttpRequest();
+	    xhr.open('POST', '/api/feedback.php', true);
+	    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	    xhr.onload = function() {
+		if ((this.status >= 200 && this.status < 300) || this.status == 400) {
+		    // Assuming the response is text-based (e.g., "Feedback received" or a similar message)
+		    alert(this.responseText);
+		} else {
+		    console.error('Request failed. Returned status of ' + xhr.status);
+		    // You might want to alert the user in case of error as well
+		    alert('Failed to submit feedback. Please try again.');
+		}
+	    };
+	    xhr.send('feedbackText=' + encodeURIComponent(feedbackText));
+	}
+        
+	function toggleFeedbackForm() {
+            var container = document.getElementById('feedbackContainer');
+            container.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

