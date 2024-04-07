@@ -1,0 +1,69 @@
+/* Overall body styling */
+body {
+    background-color: #121212; /* Dark background for the theme */
+    color: #E0E0E0; /* Light color for text for contrast */
+    font-family: 'Arial', sans-serif; /* A clean, simple font */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styling for the main heading */
+h1, h2 {
+    color: #BB86FC; /* A slightly softer color for headings */
+}
+
+/* Link styling */
+a {
+    color: #BB86FC;
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #03DAC6; /* Change color on hover for feedback */
+}
+
+/* Gallery and backdrop images */
+.gallery img, .backdrop {
+    width: 300px; /* Fixed width for all images */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners for a polished look */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for gallery and backdrop images */
+.gallery img:hover, .backdrop:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Form input and button styling */
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0; /* Add some space around inputs */
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"] {
+    background-color: #6200EE; /* A distinct color for buttons */
+    color: #FFFFFF;
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+input[type="submit"]:hover {
+    background-color: #3700B3; /* Darken button on hover for feedback */
+}
+
+input[type="text"] {
+    background-color: #333333; /* Dark input fields for theme consistency */
+    color: #FFFFFF; /* Light text color for contrast */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #BB86FC; /* Highlight focus with theme color */
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Meme</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .backdrop {
+            border: 2px solid transparent;
+            display: inline-block;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .backdrop.selected {
+            border-color: blue;
+        }
+    </style>
+    <script>
+        function selectBackdrop(image) {
+            document.querySelectorAll('.backdrop').forEach(function(elm) {
+                elm.classList.remove('selected');
+            });
+            image.classList.add('selected');
+            document.getElementById('selectedBackdrop').value = image.getAttribute('data-name');
+        }
+	function uploadByUrl(e) {
+	    e.preventDefault(); 
+
+	    var url = document.getElementById('imageUrl').value; 
+	    fetch('/loadImage', {
+		method: 'POST', 
+		headers: {
+		    'Content-Type': 'application/json' 
+		},
+		body: JSON.stringify({ imageURL: url }) 
+	    })
+	    .then(response => {
+		if (response.ok) {
+		    return response.json(); 
+		}
+		throw new Error('Network response was not ok.'); 
+	    })
+	    .then(data => {
+		console.log(data); 
+	    })
+	    .catch(error => {
+		console.error('There was a problem with the fetch operation:', error); // Log errors
+	    });
+	}
+    </script>
+</head>
+<body>
+    <h1>Generate Your Meme</h1>
+
+    <h2>Select a Backdrop</h2>
+    <div>
+        {% for backdrop in backdrops %}
+            <img src="{{ url_for('static', filename='images/' + backdrop) }}" alt="{{ backdrop }}" class="backdrop" data-name="{{ backdrop }}" onclick="selectBackdrop(this);">
+        {% endfor %}
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="backdrop" id="selectedBackdrop" value="">
+        <br>
+        <label for="toptext">Top Text:</label>
+        <input type="text" name="toptext">
+        <br>
+	<label for="bottomtext">Bottom Text:</label>
+	<input type="text" name="bottomtext">
+	<br>
+        <input type="submit" value="Generate Meme">
+    </form>
+
+    <h2>Load a backdrop</h2>
+    <b>Feature still in pre-alpha</b>
+    <form onsubmit="uploadByUrl(event)">
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" name="imageUrl">
+        <input type="submit" value="Load">
+    </form>
+</body>
+</html>
+
