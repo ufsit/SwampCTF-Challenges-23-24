@@ -6,7 +6,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 ## Challenges:
 
 > [!NOTE]
-> Some challenge writeups have not been published yet. They will in the upcoming weeks
+> Some challenge writeups have not been published yet. They will be in the upcoming weeks
 
 ### Rev
 
