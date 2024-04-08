@@ -7,7 +7,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 
 - [Cole](https://github.com/Cool-Cole)
 - James
-- Adam
+- [Adam](https://github.com/adamkadaban)
 - [Gabriel](https://github.com/Sn00pyW00dst0ck)
 - [Scott](https://github.com/smoothhacker)
 - [Ayden](https://github.com/ColbyJack1134)
