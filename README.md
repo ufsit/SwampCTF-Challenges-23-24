@@ -1,25 +1,55 @@
 # SwampCTF Challenges 24
 
-Challenges:
-- pwn/scratchpad
-- pwn/guess_it
-- pwn/old_school
-- pwn/beginner_pwn_1
-- pwn/beginner_pwn_2
-- pwn/Reptilian_Server
-- rev/beginner_rev_1
-- rev/stallmanCrypt
-- crypto/Jank_File_Encryptor
-- misc/More_than_meets_the_eye
+## Challenges:
 
-Challenge Authors:
-- pwn/scratchpad: James
-- pwn/guess_it: James
-- pwn/old_school: James
-- pwn/beginner_pwn_1: Cole (cole@cole.pizza)
-- pwn/beginner_pwn_2: Cole
-- pwn/Reptilian_Server: Gabriel
-- rev/beginner_rev_1: Cole
-- rev/stallmanCrypt: Cole
-- crypto/Jank_File_Encryptor: Cole
-- misc/More_than_meets_the_eye: Gabriel
+### Rev
+
+- [Beginner Rev](./rev/)
+- [ARMory](./rev/)
+- [Off The Hook](./rev/)
+- [stallmanCrypt](./rev/)
+- [McGuffin Hunt](./rev/)
+
+### Pwn
+
+- [Beginner Pwn 1](./pwn/)
+- [Beginner Pwn 2](./pwn/)
+- [Guess It](./pwn/)
+- [Scratchpad](./pwn/)
+- [where2go](./pwn/)
+- [Employee Evaluation](./pwn/)
+- [Old School](./pwn/)
+- [Reptillian Server](./pwn/)
+
+### Web
+
+- [Potion Seller](./web/)
+- [BrailleDB-1](./web/)
+- [MemeGenerator](./web/)
+- [UnderConstruction](./web/)
+- [BrailleDB-2](./web/)
+
+### Crypto
+
+- [Copper Crypto](./crypto/copper%20crypto)
+- [Jank File Encryptor](./crypto/)
+
+### Forensics
+
+- [New C2 Channel?](./forensics/New%20C2%20Channel?)
+- [Notoriously Tricky Login Mess](./forensics/Notoriously%20Tricky%20Login%20Mess)
+- [pingpong](./forensics/pingpong)
+
+### Misc
+
+- [Discord Challenge](./misc/)
+- [What the Form](./misc/)
+- [Lost Some Magic](./misc/)
+- [The Time Equations](./misc/)
+- [More than meets the eye](./misc/)
+
+### OSINT
+
+- [Lost in Space](./osint/)
+- [Aerial Attack](./osint/)
+- [Hidden Snack Shop](./osint/)
