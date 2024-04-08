@@ -36,7 +36,7 @@
 
 ### Forensics
 
-- [New C2 Channel?](./forensics/New%20C2%20Channel?)
+- [New C2 Channel?](./forensics/New%20C2%20Channell%3F)
 - [Notoriously Tricky Login Mess](./forensics/Notoriously%20Tricky%20Login%20Mess)
 - [pingpong](./forensics/pingpong)
 
