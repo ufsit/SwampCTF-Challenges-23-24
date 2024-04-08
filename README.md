@@ -1,6 +1,12 @@
 # SwampCTF Challenges 24
 
+Official repo for [SwampCTF](https://swampctf.com) 2024. 
+See CTFTime [here](https://ctftime.org/event/2138)
+
 ## Challenges:
+
+> [!NOTE]
+> Some challenge writeups have not been published yet. They will in the upcoming weeks
 
 ### Rev
 
