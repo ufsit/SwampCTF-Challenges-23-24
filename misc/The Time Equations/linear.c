@@ -90,7 +90,7 @@ int main() {
         }
     }
 
-    printf("We did it! We have traveled through time! Here is the flag: \n");
+    printf("We did it! We have traveled through time! Here is the flag: swampCTF{tim3_trav3l_i5nt_r3al}\n");
 
     return 0;
 }
