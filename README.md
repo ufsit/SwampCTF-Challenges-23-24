@@ -31,7 +31,7 @@
 
 ### Crypto
 
-- [Copper Crypto](./crypto/copper%20crypto)
+- [Copper Crypto](./crypto/Copper Crypto)
 - [Jank File Encryptor](./crypto/)
 
 ### Forensics
