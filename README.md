@@ -6,28 +6,28 @@
 
 - [Beginner Rev](./rev/) - [Cole](https://github.com/Cool-Cole)
 - [ARMory](./rev/)
-- [Off The Hook](./rev/)
-- [stallmanCrypt](./rev/) - [Cole](https://github.com/Cool-Cole)
+- [Off The Hook](./rev/off_the_hook)
+- [stallmanCrypt](./rev/stallmanCrypt) - [Cole](https://github.com/Cool-Cole)
 - [McGuffin Hunt](./rev/)
 
 ### Pwn
 
-- [Beginner Pwn 1](./pwn/) - [Cole](https://github.com/Cool-Cole)
+- [Beginner Pwn 1](./pwn/beginner_pwn_1) - [Cole](https://github.com/Cool-Cole)
 - [Beginner Pwn 2](./pwn/) - [Cole](https://github.com/Cool-Cole)
-- [Guess It](./pwn/) - James
-- [Scratchpad](./pwn/) - James
+- [Guess It](./pwn/guess_it) - James
+- [Scratchpad](./pwn/scratchpad) - James
 - [where2go](./pwn/)
 - [Employee Evaluation](./pwn/)
-- [Old School](./pwn/)
-- [Reptillian Server](./pwn/) - [Gabriel](https://github.com/Sn00pyW00dst0ck)
+- [Old School](./pwn/old_school)
+- [Reptillian Server](./pwn/Reptillian_Server) - [Gabriel](https://github.com/Sn00pyW00dst0ck)
 
 ### Web
 
-- [Potion Seller](./web/) - [Ayden](https://github.com/ColbyJack1134)
-- [BrailleDB-1](./web/) - [Ayden](https://github.com/ColbyJack1134)
-- [MemeGenerator](./web/) - [Ayden](https://github.com/ColbyJack1134)
-- [UnderConstruction](./web/) - [Ayden](https://github.com/ColbyJack1134)
-- [BrailleDB-2](./web/) - [Ayden](https://github.com/ColbyJack1134)
+- [Potion Seller](./web/Potion%20Seller.md) - [Ayden](https://github.com/ColbyJack1134)
+- [BrailleDB-1](./web/BrailleDB-1) - [Ayden](https://github.com/ColbyJack1134)
+- [MemeGenerator](./web/MemeGenerator) - [Ayden](https://github.com/ColbyJack1134)
+- [UnderConstruction](./web/UnderConstruction) - [Ayden](https://github.com/ColbyJack1134)
+- [BrailleDB-2](./web/BrailleDB-2) - [Ayden](https://github.com/ColbyJack1134)
 
 ### Crypto
 
@@ -46,7 +46,7 @@
 - [What the Form](./misc/)
 - [Lost Some Magic](./misc/)
 - [The Time Equations](./misc/)
-- [More than meets the eye](./misc/) - [Gabriel](https://github.com/Sn00pyW00dst0ck)
+- [More than meets the eye](./misc/More_than_meets_the_eye) - [Gabriel](https://github.com/Sn00pyW00dst0ck)
 
 ### OSINT
 
