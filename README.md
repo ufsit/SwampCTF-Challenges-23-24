@@ -23,7 +23,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 ### Rev
 
 - [Beginner Rev](./rev/) - Cole
-- [ARMory](./rev/)
+- [ARMory](./rev/) - Scott
 - [Off The Hook](./rev/off_the_hook)
 - [stallmanCrypt](./rev/stallmanCrypt) - Cole
 - [McGuffin Hunt](./rev/)
@@ -34,7 +34,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 - [Beginner Pwn 2](./pwn/) - Cole
 - [Guess It](./pwn/guess_it) - James
 - [Scratchpad](./pwn/scratchpad) - James
-- [where2go](./pwn/)
+- [where2go](./pwn/) - Scott
 - [Employee Evaluation](./pwn/)
 - [Old School](./pwn/old_school)
 - [Reptillian Server](./pwn/Reptillian_Server) - Gabriel
