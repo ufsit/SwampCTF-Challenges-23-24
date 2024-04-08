@@ -17,9 +17,9 @@ Challenge Authors:
 - pwn/guess_it: James
 - pwn/old_school: James
 - pwn/beginner_pwn_1: Cole (cole@cole.pizza)
-- pwn/beginner_pwn_2: Cole (cole@cole.pizza)
+- pwn/beginner_pwn_2: Cole
 - pwn/Reptilian_Server: Gabriel
-- rev/beginner_rev_1: Cole (cole@cole.pizza)
-- rev/stallmanCrypt: Cole (cole@cole.pizza)
-- crypto/Jank_File_Encryptor: Cole (cole@cole.pizza)
+- rev/beginner_rev_1: Cole
+- rev/stallmanCrypt: Cole
+- crypto/Jank_File_Encryptor: Cole
 - misc/More_than_meets_the_eye: Gabriel
