@@ -1,0 +1,9 @@
+stallmanCrypt/to_upload$ ./stallmanCrypt -re windows_docs.md
+Random key: 425BE044F302370EDBF04C6E3954B06E4264FA1A4168646EB71D013D4AED026694DFF266863956320A5DCE4F6D4BC26D9040435597399028CBB10D31288D5313
+Keep this key safe. It is needed to decrypt the file.
+The file has been encrypted and written to windows_docs.md.enc
+
+stallmanCrypt/to_upload$ ./stallmanCrypt -re windows_source.c
+Random key: 3E3337080E95582400FF895B294A260B3FB66A690E189E7FB48F6D077C5BCB3E80B4AF1BDDEEEB152C41022938D16E209B98F34BB2D77E7351CCE2594FFDC426
+Keep this key safe. It is needed to decrypt the file.
+The file has been encrypted and written to windows_source.c.enc
