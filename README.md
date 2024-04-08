@@ -36,9 +36,9 @@
 
 ### Forensics
 
-- [New C2 Channel?](./forensics/New%20C2%20Channel%3F)(./crypto/Copper%20Crypto) - [Adam](https://github.com/adamkadaban)
-- [Notoriously Tricky Login Mess](./forensics/Notoriously%20Tricky%20Login%20Mess)(./crypto/Copper%20Crypto) - [Adam](https://github.com/adamkadaban)
-- [pingpong](./forensics/pingpong)(./crypto/Copper%20Crypto) - [Adam](https://github.com/adamkadaban)
+- [New C2 Channel?](./forensics/New%20C2%20Channel%3F) - [Adam](https://github.com/adamkadaban)
+- [Notoriously Tricky Login Mess](./forensics/Notoriously%20Tricky%20Login%20Mess) - [Adam](https://github.com/adamkadaban)
+- [pingpong](./forensics/pingpong) - [Adam](https://github.com/adamkadaban)
 
 ### Misc
 
