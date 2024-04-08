@@ -11,7 +11,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 - [Gabriel](https://github.com/Sn00pyW00dst0ck)
 - [Scott](https://github.com/smoothhacker)
 - [Ayden](https://github.com/ColbyJack1134)
-- Pheonix
+- [Pheonix](https://github.com/Diet-Gameboy)
 - [Sid](https://github.com/47Cid)
 - [Kit](https://github.com/Kitt262)
 
