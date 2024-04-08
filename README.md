@@ -13,6 +13,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 - [Ayden](https://github.com/ColbyJack1134)
 - Pheonix
 - [Sid](https://github.com/47Cid)
+- [Kit](https://github.com/Kitt262)
 
 ## Challenges:
 
@@ -61,12 +62,12 @@ See CTFTime [here](https://ctftime.org/event/2138)
 
 - [Discord Challenge](./misc/)
 - [What the Form](./misc/)
-- [Lost Some Magic](./misc/)
+- [Lost Some Magic](./misc/) - Kit
 - [The Time Equations](./misc/)
 - [More than meets the eye](./misc/More_than_meets_the_eye) - Gabriel
 
 ### OSINT
 
 - [Lost in Space](./osint/)
-- [Aerial Attack](./osint/)
-- [Hidden Snack Shop](./osint/)
+- [Aerial Attack](./osint/) - Kit
+- [Hidden Snack Shop](./osint/) - Kit
