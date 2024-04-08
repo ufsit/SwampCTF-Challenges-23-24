@@ -6,7 +6,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 ## Authors:
 
 - [Cole](https://github.com/Cool-Cole)
-- James
+- [James](https://github.com/Tetrago)
 - [Adam](https://github.com/adamkadaban)
 - [Gabriel](https://github.com/Sn00pyW00dst0ck)
 - [Scott](https://github.com/smoothhacker)
