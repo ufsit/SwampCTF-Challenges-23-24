@@ -1,6 +1,6 @@
 # SwampCTF Challenges 24
 
-Official repo for [SwampCTF](https://swampctf.com) 2024. 
+Official repo for [SwampCTF](https://swampctf.com) 2024.
 See CTFTime [here](https://ctftime.org/event/2138)
 
 ## Authors:
@@ -14,6 +14,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 - [Pheonix](https://github.com/Diet-Gameboy)
 - [Sid](https://github.com/47Cid)
 - [Kit](https://github.com/Kitt262)
+- [Michael](https://github.com/Michael-Ramsamooj)
 
 ## Challenges:
 
@@ -41,7 +42,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 
 ### Web
 
-- [Potion Seller](./web/Potion%20Seller.md) - 
+- [Potion Seller](./web/Potion%20Seller.md) -
 - [BrailleDB-1](./web/BrailleDB-1) - Ayden
 - [MemeGenerator](./web/MemeGenerator) - Ayden
 - [UnderConstruction](./web/UnderConstruction) - Ayden
@@ -61,7 +62,7 @@ See CTFTime [here](https://ctftime.org/event/2138)
 ### Misc
 
 - [Discord Challenge](./misc/)
-- [What the Form](./misc/)
+- [What the Form](./misc/What_the_Form) - Michael
 - [Lost Some Magic](./misc/) - Kit
 - [The Time Equations](./misc/)
 - [More than meets the eye](./misc/More_than_meets_the_eye) - Gabriel
