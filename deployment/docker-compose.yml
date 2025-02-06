@@ -1,0 +1,91 @@
+version: '3'
+
+services:
+  guess_it:
+    build:
+      context: ./pwn
+      args:
+        - BINARY_FILE=./guess_it/bin
+        - FLAG_FILE=./guess_it/flag.txt
+    restart: always
+    privileged: true
+    ports:
+      - '64236:5000'
+
+  scratchpad:
+    build:
+      context: ./pwn
+      args:
+        - BINARY_FILE=./scratchpad/bin
+        - FLAG_FILE=./scratchpad/flag.txt
+    restart: always
+    privileged: true
+    ports:
+      - '64193:5000'
+
+  old_school:
+    build:
+      context: ./pwn
+      args:
+        - BINARY_FILE=./old_school/bin
+        - FLAG_FILE=./old_school/flag.txt
+    restart: always
+    privileged: true
+    ports:
+      - '64444:5000'
+
+  linear:
+    build: ./misc/linear
+    restart: always
+    privileged: true
+    ports:
+      - '60001:5000'
+
+  employee_eval:
+    build: ./pwn/employee_eval
+    restart: always
+    privileged: true
+    ports:
+      - '60010:5000'
+
+  reptilian_server:
+    build: ./pwn/reptilian_server
+    restart: always
+    runtime: sysbox-runc
+    ports:
+      - '64646:3000'
+
+  potion_seller:
+    build: ./web/potion_seller
+    restart: always
+    runtime: sysbox-runc
+    ports:
+      - '64845:3000'
+  pwn_one:
+    build:
+      context: ./pwn
+      args:
+        - BINARY_FILE=./pwn1/system_terminal
+        - FLAG_FILE=./pwn1/flag.txt
+    restart: always
+    privileged: true
+    ports:
+      - '61230:5000'
+
+  pwn_two:
+    build:
+      context: ./pwn
+      args:
+        - BINARY_FILE=./pwn2/hello
+        - FLAG_FILE=./pwn2/flag.txt
+    restart: always
+    privileged: true
+    ports:
+      - '61231:5000'
+
+  where_two_go:
+    build: ./pwn/where_two_go
+    restart: always
+    privileged: true
+    ports:
+      - '61234:9999'

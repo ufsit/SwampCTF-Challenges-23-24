@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meme Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Meme Gallery</h1>
+    <a href="{{ url_for('generate') }}">Generate New Meme</a>
+    <div class="gallery">
+        {% for image in images %}
+            <img src="{{ url_for('static', filename='generated/' + image) }}" alt="Meme">
+        {% endfor %}
+    </div>
+</body>
+</html>
+
